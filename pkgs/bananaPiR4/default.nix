@@ -75,6 +75,10 @@
 
     ignoreConfigErrors = true;
     structuredExtraConfig = with lib.kernel; {
+      BLK_DEV_DM = module;
+      DM_CRYPT = module;
+      WIREGUARD = module;
+
       BTRFS_FS = module;
       BTRFS_FS_POSIX_ACL = yes;
 
